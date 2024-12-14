@@ -13,13 +13,14 @@ genDimIds <- function(dimSize, dimName = NULL) {
   dimNmb = length(dimSize)
 
   # Debug print
-  # logFile <- file("log.txt", open = "a")
-  # sink(logFile)
-  # funcName = paste(as.character(match.call()), collapse = "~")
-  # cat(paste0(funcName, ": begins \n"))
-  # cat(paste0("Number of dimensions: ", dimNmb, "\n"))
-  # sink()
-  # close(logFile)
+  logFile <- file("log.txt", open = "a")
+  sink(logFile)
+  funcName = paste(as.character(match.call()), collapse = "~")
+  cat(paste0(funcName, ": begins \n"))
+  cat(paste0("Number of dimensions: ", dimNmb, "\n"))
+  # cat(paste0("testingGenDimIds"))
+  sink()
+  close(logFile)
 
   # Initialize a list to store each dimension's sequence
   dimSequences <- vector("list", dimNmb)

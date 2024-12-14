@@ -1,2 +1,1 @@
-genDimIds~c(2, 3, 4)~c("site_id", "period_id", "worker_id"): begins 
-Number of dimensions: 3
+testing
