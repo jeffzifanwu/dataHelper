@@ -5,6 +5,7 @@
 #' @return A dataframe containing dimension IDs
 #' @examples
 #' genDimIds(dimSize =  c(2,3,4), dimName = c("site_id", "period_id", "worker_id"))
+#' @export
 
 genDimIds <- function(dimSize, dimName = NULL) {
 
