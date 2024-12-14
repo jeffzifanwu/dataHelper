@@ -2,5 +2,6 @@
 *.Rproj
 .Rhistory
 .Rdata
+.RData
 .httr-oauth
 .DS_Store
