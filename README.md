@@ -9,7 +9,7 @@ The goal of dataHelper is to help my data processing tasks.
 ## Installation
 
 ``` r
-devtools::install_github(jeffzifanwu/dataHelper")
+devtools::install_github("jeffzifanwu/dataHelper")
 ```
 
 ## Example
