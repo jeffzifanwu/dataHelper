@@ -10,16 +10,27 @@ The goal of dataHelper is to help my data processing tasks.
 
 ``` r
 devtools::install_github("jeffzifanwu/dataHelper")
+library(dataHelper)
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+### Logging modelling resulst
+```r
+# Create log.txt in the current directory
+myLog <- logging$new("log.txt")
+myLog$createFile()
 
+# write results to log.txt
+logFile <- file("log.txt", open = "a")
+sink(logFile)
+summary(mdl) # Assuming you have a model object: mdl
+sink()
+close(logFile)
+```
+
+## Simulate dimension ids
 ``` r
-library(dataHelper)
-
-## basic example code
 genDimIds(dimSize =  c(2,3,4), dimName = c("site_id", "period_id", "worker_id"))
 ```
 
