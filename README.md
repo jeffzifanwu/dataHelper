@@ -29,7 +29,7 @@ sink()
 close(logFile)
 ```
 
-## Simulate dimension ids
+## Generate dimension ids
 ``` r
 genDimIds(dimSize =  c(2,3,4), dimName = c("site_id", "period_id", "worker_id"))
 ```
