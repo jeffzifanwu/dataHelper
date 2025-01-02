@@ -21,7 +21,10 @@ library(dataHelper)
 myLog <- logging$new("log.txt")
 myLog$createFile()
 
-# write results to log.txt
+# log any comments
+myLog$write(paste0("Model 1: Standard DiD"))
+
+# log model results
 logFile <- file("log.txt", open = "a")
 sink(logFile)
 summary(mdl) # Assuming you have a model object: mdl
