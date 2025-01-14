@@ -18,6 +18,7 @@ devtools::document() # create documentation
 usethis::use_testthat()
 usethis::use_test("genDimIds")
 usethis::use_test("logging")
+usethis::use_test("logSummary")
 
 # Create a readme
 usethis::use_readme_md()
