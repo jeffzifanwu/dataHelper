@@ -1,11 +1,11 @@
 # Create package
-usethis::create_package("jeffCodes/dataHelper")
+# usethis::create_package("jeffCodes/dataHelper")
 
 # Ignore configuration
-usethis::use_build_ignore("dev")
+# usethis::use_build_ignore("dev")
 
 # Set up dependencies
-usethis::use_package("R6")
+# usethis::use_package("R6")
 
 # Check the current working directory is at dataHelper
 getwd()
@@ -39,7 +39,7 @@ devtools::check()
 # - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Check the current working directory is at JWU_2024rdev
-setwd("~/jeffCodes/JWU_2024rdev")
+setwd("localTestSpace/")
 getwd()
 
 # install package
