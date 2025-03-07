@@ -12,6 +12,7 @@ getwd()
 
 # Create R functions
 usethis::use_r("genDimIds")
+usethis::use_r("checkNaDf")
 devtools::document() # create documentation
 
 # Testing framework
@@ -19,21 +20,19 @@ usethis::use_testthat()
 usethis::use_test("genDimIds")
 usethis::use_test("logging")
 usethis::use_test("logSummary")
+usethis::use_test("checkNaDf")
 
 # Create a readme
+# (No need to run every time)
 usethis::use_readme_md()
 
 # Licenses
+# (No need to run every time)
 usethis::use_gpl_license(version = 3)
 
 # check the package
-devtools::check()
 devtools::test()
-
-# GitHub
-usethis::use_git()
-usethis::gh_token_help()
-usethis::use_github()
+devtools::check()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - -
 # Testing space: ----
