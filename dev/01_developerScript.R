@@ -13,6 +13,7 @@ getwd()
 # Create R functions
 usethis::use_r("genDimIds")
 usethis::use_r("checkNaDf")
+usethis::use_r("checkDfEmpty")
 devtools::document() # create documentation
 
 # Testing framework
@@ -21,6 +22,8 @@ usethis::use_test("genDimIds")
 usethis::use_test("logging")
 usethis::use_test("logSummary")
 usethis::use_test("checkNaDf")
+usethis::use_test("checkDfEmpty")
+testthat::test_file("tests/testthat/test-checkDfEmpty.R")
 
 # Create a readme
 # (No need to run every time)
