@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of dataHelper is to help my data processing tasks.
+The goal of creating this package is to help my data processing tasks.
 
 ## Installation
 
