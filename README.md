@@ -1,4 +1,3 @@
-
 # dataHelper
 
 <!-- badges: start -->
@@ -7,15 +6,23 @@
 The goal of creating this package is to help my data processing tasks.
 
 ## Installation
-
 ``` r
 devtools::install_github("jeffzifanwu/dataHelper")
 library(dataHelper)
 ```
 
+## See documentation in R
+``` r
+?dataHelper::checkNaDf
+?dataHelper::checkDfEmpty
+?dataHelper::genDimIds
+?dataHelper::logging
+?dataHelper::logSummary
+```
+
 ## Examples
 
-### Logging modelling resulst
+### Log modelling resulst
 ```r
 # Create log.txt in the current directory
 myLog <- logging$new("log.txt")
@@ -32,8 +39,7 @@ sink()
 close(logFile)
 ```
 
-## Generate dimension ids
+### Generate dimension ids
 ``` r
 genDimIds(dimSize =  c(2,3,4), dimName = c("site_id", "period_id", "worker_id"))
 ```
-
